@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -152,7 +151,7 @@
 			</div>
 		</article>
 		<footer>
-			<p>&copy; Andy Shaw. Have a nice Friday.</p>
+			<p>&copy; Andy Shaw. Have a nice <span id="day"></span>.</p>
 			<ul>
 				<li>
 					<a href="http://twitter.com/andyshaw85">
@@ -180,5 +179,24 @@
 				</li>
 			</ul>
 		</footer>
-	</body>
+	</section>
+	<script>
+		function niceDay() {
+			var d = new Date();
+			var weekday = new Array(7);
+			weekday[0] = "Sunday";
+			weekday[1] = "Monday";
+			weekday[2] = "Tuesday";
+			weekday[3] = "Wednesday";
+			weekday[4] = "Thursday";
+			weekday[5] = "Friday";
+			weekday[6] = "Saturday";
+
+			var n = weekday[d.getDay()];
+			document.getElementById("day").innerHTML = n;
+
+		}
+		window.onload = niceDay;
+	</script>
+</body>
 </html>

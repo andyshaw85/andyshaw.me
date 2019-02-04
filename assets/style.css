@@ -368,6 +368,11 @@ footer p {
   top: 9px;
 }
 
+footer p span {
+  font-size: 20px;
+  line-height: 32px;
+}
+
 footer ul {
   float: right;
 }
