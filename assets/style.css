@@ -83,6 +83,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background: url("l.png") top center repeat-y; */
   background-size: 1440px;
+  min-width: 1000px;
 }
 
 *::-moz-selection {
@@ -715,4 +716,103 @@ aside ul li {
 
 .caseStudy aside p em:last-child {
   padding: 0 0 24px;
+}
+
+@media screen and (max-width: 1320px) {
+
+  header,
+  article,
+  footer,
+  .intro {
+    width: 1160px;
+  }
+
+  ol.work li:nth-child(1) {
+    width: 600px;
+  }
+
+  ol.work li:nth-child(3) {
+    width: 440px;
+  }
+
+  ol.work li:nth-child(5) {
+    width: 600px;
+  }
+
+  ol.work li:nth-child(6) {
+    width: 440px;
+  }
+
+  h3.small,
+  section {
+    margin-left: 0;
+  }
+
+  .caseStudy .intro p {
+    width: 600px;
+  }
+
+  .caseStudy .hero ul {
+    width: 1080px;
+  }
+
+  .caseStudy .hero ul li {
+    width: 520px;
+  }
+
+  .caseStudy .hero.three ul li {
+    width: 333px;
+  }
+
+  .caseStudy .hero.four ul li {
+    width: 240px;
+  }
+
+  .caseStudy .hero.five ul li {
+    width: 184px;
+  }
+
+}
+
+@media screen and (max-width: 1160px) {
+
+  header,
+  article,
+  footer,
+  .intro {
+    width: 1000px;
+  }
+
+  ol.work li {
+    width: 440px!important;
+  }
+
+  aside {
+    margin-right: 0
+  }
+
+  .caseStudy .intro p {
+    width: 440px;
+  }
+
+  .caseStudy .hero ul {
+    width: 920px;
+  }
+
+  .caseStudy .hero ul li {
+    width: 440px;
+  }
+
+  .caseStudy .hero.three ul li {
+    width: 280px;
+  }
+
+  .caseStudy .hero.four ul li {
+    width: 200px;
+  }
+
+  .caseStudy .hero.five ul li {
+    width: 152px;
+  }
+
 }
