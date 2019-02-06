@@ -46,7 +46,7 @@
 			<p class="caption">Landing page for web app</p>
 			<p>I designed and coded a simple landing page with the help of Chris Thomas who created the logo.</p>
 			<p>We partnered with Animade to create this charming video. Using minimal and stylish character design coupled with a mechanical transitional device they were able to communicate the essence of the app while maintaining a chirpy and entertaining flow.</p>
-			<video controls autoplay="autoplay" muted="muted" webkit-playsinline="true" playsinline="true" loop="loop" src="assets/message.mp4"></video>
+			<video controls autoplay="autoplay" muted="muted" playsinline loop="loop" src="assets/message.mp4"></video>
 			<p class="caption video">Introduction video by Animade</p>
 			<p>I worked on the script with copywriter Eric Ledford. Eric also worked on the words across this site, from the headlines to the T&Cs.</p>
 			<aside>
@@ -90,32 +90,31 @@
 				</li>
 			</ul>
 		</footer>
-	</section>
-	<script>
-		function niceDay() {
-			var d = new Date();
-			var weekday = new Array(7);
-			weekday[0] = "Sunday";
-			weekday[1] = "Monday";
-			weekday[2] = "Tuesday";
-			weekday[3] = "Wednesday";
-			weekday[4] = "Thursday";
-			weekday[5] = "Friday";
-			weekday[6] = "Saturday";
+		<script>
+			function niceDay() {
+				var d = new Date();
+				var weekday = new Array(7);
+				weekday[0] = "Sunday";
+				weekday[1] = "Monday";
+				weekday[2] = "Tuesday";
+				weekday[3] = "Wednesday";
+				weekday[4] = "Thursday";
+				weekday[5] = "Friday";
+				weekday[6] = "Saturday";
 
-			var n = weekday[d.getDay()];
-			document.getElementById("day").innerHTML = n;
+				var n = weekday[d.getDay()];
+				document.getElementById("day").innerHTML = n;
 
-		}
-		window.onload = niceDay;
-	</script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133952608-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+			}
+			window.onload = niceDay;
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133952608-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'UA-133952608-1');
-	</script>
-</body>
+			gtag('config', 'UA-133952608-1');
+		</script>
+	</body>
 </html>

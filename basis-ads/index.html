@@ -10,7 +10,6 @@
 			<hgroup>
 				<h1><a href="../index.html">Andy Shaw</a></h1>
 				<h2>Product Designer</h2>
-			</a>
 			</hgroup>
 			<nav>
 				<ul>
@@ -44,14 +43,14 @@
 			<p>When I joined Havas, my team and I worked exclusively on website and web apps. We eventually began working on native mobile ads before finally directly supporting the media side of the business by designing and building interactive ads predominantly for mobile.</p>
 			<p>After designing the ads we'd build them with software that did not require the use of code. The ads would then be hosted on the site ready to be used in campaigns.</p>
 			<p>After leaving Havas, Michael and I wanted to create the same type of software with a focus on simplicity and good design.</p>
-			<video controls="" autoplay="autoplay" muted="muted" webkit-playsinline="true" playsinline="true" loop="loop" src="assets/basisAds.mp4"></video>
+			<video controls="" autoplay="autoplay" muted="muted" playsinline loop="loop" src="assets/basisAds.mp4"></video>
 			<p class="caption video">Demo of the ad builder</p>
 			<p>In the builder area of the app, you can add images and videos and modify as needed. We plan to add other components like maps, carousels, 360 video and more shortly. Watch this space!</p>
 			<aside>
 				<h6>My Role</h6>
 				<p>Andy Shaw <em>Product Design</em></p>
 				<h6>Credits</h6>
-				<p>Michael Loistl</a> <em>Web Development</em></p>
+				<p>Michael Loistl <em>Web Development</em></p>
 			</aside>
 		</article>
 		<footer>
@@ -83,32 +82,31 @@
 				</li>
 			</ul>
 		</footer>
-	</section>
-	<script>
-		function niceDay() {
-			var d = new Date();
-			var weekday = new Array(7);
-			weekday[0] = "Sunday";
-			weekday[1] = "Monday";
-			weekday[2] = "Tuesday";
-			weekday[3] = "Wednesday";
-			weekday[4] = "Thursday";
-			weekday[5] = "Friday";
-			weekday[6] = "Saturday";
+		<script>
+			function niceDay() {
+				var d = new Date();
+				var weekday = new Array(7);
+				weekday[0] = "Sunday";
+				weekday[1] = "Monday";
+				weekday[2] = "Tuesday";
+				weekday[3] = "Wednesday";
+				weekday[4] = "Thursday";
+				weekday[5] = "Friday";
+				weekday[6] = "Saturday";
 
-			var n = weekday[d.getDay()];
-			document.getElementById("day").innerHTML = n;
+				var n = weekday[d.getDay()];
+				document.getElementById("day").innerHTML = n;
 
-		}
-		window.onload = niceDay;
-	</script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133952608-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+			}
+			window.onload = niceDay;
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133952608-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'UA-133952608-1');
-	</script>
-</body>
+			gtag('config', 'UA-133952608-1');
+		</script>
+	</body>
 </html>

@@ -10,7 +10,6 @@
 			<hgroup>
 				<h1><a href="../index.html">Andy Shaw</a></h1>
 				<h2>Product Designer</h2>
-			</a>
 			</hgroup>
 			<nav>
 				<ul>
@@ -47,7 +46,7 @@
 					</li>
 				</ul>
 			</div>
-			<p>I'm a big fan of working on side projects. I've always found it a great creative outlet and learning experience.</p>
+			<p>I&rsquo;m a big fan of working on side projects. I&rsquo;ve always found it a great creative outlet and learning experience.</p>
 			<p>When Michael (friend and former work colleague) showed me an early prototype for a new productivity app and asked if I'd like to get involved, I jumped at the chance. </p>
 			<img src="assets/contextWeb.png" />
 			<p class="caption">Responsive web app</p>
@@ -59,7 +58,7 @@
 				<h6>My Role</h6>
 				<p>Andy Shaw <em>Product Design</em> <em>HTML &amp; CSS</em></p>
 				<h6>Credits</h6>
-				<p>Michael Loistl</a> <em>iOS Development</em> <em>Web Development</em></p>
+				<p>Michael Loistl <em>iOS Development</em> <em>Web Development</em></p>
 			</aside>
 		</article>
 		<footer>
@@ -91,32 +90,31 @@
 				</li>
 			</ul>
 		</footer>
-	</section>
-	<script>
-		function niceDay() {
-			var d = new Date();
-			var weekday = new Array(7);
-			weekday[0] = "Sunday";
-			weekday[1] = "Monday";
-			weekday[2] = "Tuesday";
-			weekday[3] = "Wednesday";
-			weekday[4] = "Thursday";
-			weekday[5] = "Friday";
-			weekday[6] = "Saturday";
+		<script>
+			function niceDay() {
+				var d = new Date();
+				var weekday = new Array(7);
+				weekday[0] = "Sunday";
+				weekday[1] = "Monday";
+				weekday[2] = "Tuesday";
+				weekday[3] = "Wednesday";
+				weekday[4] = "Thursday";
+				weekday[5] = "Friday";
+				weekday[6] = "Saturday";
 
-			var n = weekday[d.getDay()];
-			document.getElementById("day").innerHTML = n;
+				var n = weekday[d.getDay()];
+				document.getElementById("day").innerHTML = n;
 
-		}
-		window.onload = niceDay;
-	</script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133952608-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+			}
+			window.onload = niceDay;
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133952608-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'UA-133952608-1');
-	</script>
-</body>
+			gtag('config', 'UA-133952608-1');
+		</script>
+	</body>
 </html>
