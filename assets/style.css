@@ -4,7 +4,7 @@
   src: url("Visuelt-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   src: url("Visuelt-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   src: url("Visuelt-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 h3,
