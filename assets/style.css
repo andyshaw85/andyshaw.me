@@ -478,6 +478,7 @@ aside h6 {
   letter-spacing: 1.5px;
   display: block;
   text-transform: uppercase;
+  clear: both;
 }
 
 aside p + h6 {
@@ -505,6 +506,26 @@ aside p em {
   line-height: 24px;
   color: rgba(0,0,0,.4);
   padding: 0 0 24px
+}
+
+aside p a {
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0,87,68,1);
+  text-decoration: underline;
+}
+
+.resume {
+  padding: 8px 0;
+  float: left;
+}
+
+aside p a:hover {
+  text-decoration: none;
+}
+
+aside p a:active {
+  opacity: .5;
 }
 
 aside ul li {
@@ -698,20 +719,6 @@ aside ul li {
   line-height: 24px;
   padding: 0;
   width: auto;
-}
-
-.caseStudy aside p a {
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.caseStudy aside p a:hover {
-  text-decoration: underline;
-}
-
-.caseStudy aside p a:active {
-  text-decoration: none;
-  opacity: .4;
 }
 
 .caseStudy aside p em {
