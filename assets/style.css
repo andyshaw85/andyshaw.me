@@ -24,7 +24,8 @@
 }
 
 h3,
-.caseStudy .intro p {
+.caseStudy .intro p,
+.next {
   font-family: "Visuelt-Light", sans-serif;
 }
 
@@ -727,6 +728,28 @@ aside ul li {
 
 .caseStudy aside p em:last-child {
   padding: 0 0 24px;
+}
+
+a.next {
+  font-size: 34px;
+  line-height: 40px;
+  margin: 80px auto 0px;
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  color: rgba(0,87,68,1);
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.next:hover {
+  text-decoration: underline;
+}
+
+a.next:active {
+  text-decoration: none;
+  opacity: .4;
 }
 
 @media screen and (max-width: 1320px) {
