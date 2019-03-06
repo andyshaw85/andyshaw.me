@@ -10,7 +10,6 @@
 			<hgroup>
 				<h1><a href="../">Andy Shaw</a></h1>
 				<h2>Product Designer</h2>
-			</a>
 			</hgroup>
 			<nav>
 				<ul>
@@ -49,7 +48,7 @@
 			<img src="assets/walkForWater.jpg" />
 			<p class="caption">Landing page for website</p>
 			<p>Time was limited and we needed a quick site where people could download the app.</p>
-			<video controls autoplay="autoplay" muted="muted" playsinline="true" loop="loop" src="assets/walkForWater.mp4"></video>
+			<video controls autoplay muted playsinline loop src="assets/walkForWater.mp4"></video>
 			<p class="caption video">Background animation by Animade</p>
 			<p>We had recently worked with Animade on a more complex product introduction video. For this we wanted a simple animation set as a video background to make the experience feel more fun.</p>
 			<p>We launched the app during Cannes Lions. I was proud we raised a whole chunk of change for a good cause.</p>
@@ -102,32 +101,31 @@
 				</li>
 			</ul>
 		</footer>
-	</section>
-	<script>
-		function niceDay() {
-			var d = new Date();
-			var weekday = new Array(7);
-			weekday[0] = "Sunday";
-			weekday[1] = "Monday";
-			weekday[2] = "Tuesday";
-			weekday[3] = "Wednesday";
-			weekday[4] = "Thursday";
-			weekday[5] = "Friday";
-			weekday[6] = "Saturday";
+		<script>
+			function niceDay() {
+				var d = new Date();
+				var weekday = new Array(7);
+				weekday[0] = "Sunday";
+				weekday[1] = "Monday";
+				weekday[2] = "Tuesday";
+				weekday[3] = "Wednesday";
+				weekday[4] = "Thursday";
+				weekday[5] = "Friday";
+				weekday[6] = "Saturday";
 
-			var n = weekday[d.getDay()];
-			document.getElementById("day").innerHTML = n;
+				var n = weekday[d.getDay()];
+				document.getElementById("day").innerHTML = n;
 
-		}
-		window.onload = niceDay;
-	</script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133952608-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+			}
+			window.onload = niceDay;
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133952608-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'UA-133952608-1');
-	</script>
-</body>
+			gtag('config', 'UA-133952608-1');
+		</script>
+	</body>
 </html>
