@@ -655,6 +655,11 @@ aside p em:last-child {
     line-height: 48px;
   }
 
+  h5 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
   .work ol li a h3,
   .footnote,
   .clients h4 {
@@ -743,6 +748,11 @@ aside p em:last-child {
     padding: 0px 0 69px;
   }
 
+  h5 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
   footer p,
   .clients p {
     font-size: 18px;
@@ -783,10 +793,41 @@ aside p em:last-child {
 
 @media screen and (max-width: 768px) {
 
+  h2,
+  h5,
+  h6,
+  .case p,
+  img.one {
+    grid-column: 1 / 9;
+  }
+
+  .case img {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 76px;
+  }
+
   h2 {
     font-size: 24px;
     line-height: 32px;
     padding: 0px 0 69px;
+    font-family: "GT-Cinetype-Bold", sans-serif;
+  }
+
+  h5 {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 16px 0 48px;
+  }
+
+  h6,
+  a.next {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  a.next {
+    margin-bottom: 80px;
   }
 
   .bio p,
