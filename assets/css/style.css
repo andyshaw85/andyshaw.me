@@ -72,6 +72,7 @@ body {
   color: rgba(0, 0, 0, 0.88);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fff;
 }
 
 .layout::before {
@@ -170,7 +171,7 @@ p {
 
 .work,
 .case {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(240, 240, 240) 100%);
 }
 
 .work ol {
@@ -247,7 +248,7 @@ p {
 }
 
 .clients {
-  background: rgba(0, 0, 0, 0.88);
+  background: #fa7268;
   display: block;
   margin: 89px 0 0;
   padding: 119px 0;
@@ -261,16 +262,16 @@ p {
 .clients h4 {
   font-size: 32px;
   line-height: 40px;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 1);
 }
 
 .clients p {
-  color: rgba(255, 255, 255, 0.44);
+  color: rgba(255, 255, 255, 0.88);
   margin: 16px 0 40px;
 }
 
 .clients img {
-  opacity: 0.4;
+  opacity: 0.66;
 }
 
 object {
