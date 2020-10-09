@@ -85,6 +85,12 @@ input {
 	width: calc(100% - 268px);
 }
 
+input[type=tel] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
 input:focus {
 	border-color: #FF00C1;
 	outline: none;
