@@ -19,17 +19,20 @@
 body {
     font-family: 'Quicksand', sans-serif;
     min-height: 100vh;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 32px;
     color: #1E203F;
-    min-width: 1280px
+    min-width: 320px;
 }
 
 .top::after,
 .masthead::after,
 ul.keyFeatures::after,
-footer div ul::after  {
+footer div ul::after,
+.intro::after,
+.storeBadges::after,
+.securityFeatures::after {
     clear: both;
     content: "";
     display: block;
@@ -45,6 +48,7 @@ a {
 .top {
   background: #F8F8F8;
   margin: 40px;
+  padding: 0 0 40px;
 }
 
 .logo {
@@ -74,16 +78,17 @@ a {
 }
 
 .top ul li a:hover {
-  color: #9494A4;
+  color: #ff40b3;
 }
 
 .top ul li a:active {
-  color: #1E203F;
+  color: #9494A4;
 }
 
 .masthead {
-  max-width: 1120px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 40px;
   position: relative;
 }
 
@@ -91,13 +96,14 @@ a {
   float: right;
   width: 524px;
   clear: both;
-  padding: 0px 0 60px;
+  padding: 0px 0 20px;
 }
 
 .intro {
   position: absolute;
   top: calc(50% - 40px);
   transform: translateY(-50%);
+  max-width: 420px;
 }
 
 h1 {
@@ -109,7 +115,8 @@ h1 {
 }
 
 .top p {
-  max-width: 400px
+  max-width: 400px;
+  font-size: 20px;
 }
 
 form {
@@ -205,7 +212,8 @@ button:active {
 }
 
 ul.keyFeatures {
-  max-width: 1120px;
+  max-width: 1200px;
+  padding: 0 40px;
   margin: 200px auto 183px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -381,7 +389,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #1E203F;
+  color: #ff40b3;
 }
 
 footer a:active {
@@ -413,9 +421,266 @@ footer div ul li a {
   line-height: 20px;
 }
 
+.heroMobile,
+.storeBadges,
+.notifications + img {
+  display: none;
+}
+
 
 @media screen and (max-width: 1280px) {
 
 
+
+}
+
+@media screen and (max-width: 1080px) {
+
+  .hero {
+    width: 380px;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+
+  .hero {
+    display: none;
+  }
+
+
+  .intro {
+    position: relative;
+    top: 0;
+    transform: none;
+    padding: 120px 0 0;
+  }
+
+  ul.keyFeatures {
+    margin: 24px auto;
+  }
+
+  ul.keyFeatures {
+    column-gap: 32px;
+  }
+
+  ul.keyFeatures li {
+    margin: 0 0 48px;
+  }
+
+  ul.keyFeatures li h3 {
+    padding: 62px 0 0px 0;
+    font-size: 26px;
+  }
+
+  ul.keyFeatures li p {
+    padding: 8px 0 0;
+  }
+
+  ul.keyFeatures li {
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+
+  ul.keyFeatures li:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+
+  ul.keyFeatures li:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .top ul {
+    display: none;
+  }
+
+  ul.keyFeatures {
+    display: block;
+    clear: both;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .featureImage img {
+    width: 100%;
+  }
+
+  .storeBadges {
+    display: block;
+    margin: 32px auto 0;
+    width: 318px;
+  }
+
+  img.appStore {
+    height: 48px;
+    margin: 0 12px 0 0;
+    float:left
+  }
+
+  img.appStore.play {
+      margin-right:0
+  }
+
+  a img.appStore {
+      transform: perspective(1px) scale(1);
+      transition:.2s ease-in-out
+  }
+
+  a:hover img.appStore {
+      opacity:.8
+  }
+
+  a:active img.appStore {
+      transform:perspective(1px) scale(.98)
+  }
+
+  .heroMobile {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+
+  .top {
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro,
+  h1,
+  .top p {
+    max-width: 100%;
+  }
+
+  .masthead {
+    padding: 0 32px;
+  }
+
+  .top ul {
+    display: none;
+  }
+
+  form {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .top p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .logo {
+    margin: 0 auto;
+    display: block;
+    width: 160px;
+    position: relative;
+    top: 80px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 44px;
+    padding: 0 32px 20px;
+    text-align: left;
+  }
+
+  h2 + p {
+    padding: 0 32px 8px;
+    text-align: left;
+  }
+
+  ul.securityFeatures {
+    margin: 16px auto 64px;
+    display: block;
+  }
+
+  ul.securityFeatures li {
+    border: none;
+    clear: both;
+    width: 100%;
+    padding: 126px 0 0;
+    margin: 0;
+    min-height: auto;
+  }
+
+  ul.securityFeatures li p {
+    margin: 0 32px;
+  }
+
+  .featureImage {
+    margin: 0 0 40px;
+  }
+
+  .notifications {
+    display: none;
+  }
+
+  .notifications + img {
+    display: block;
+    width: 100%;
+    margin: 0 0 64px;
+    clear: both;
+  }
+
+  .featureImage.support {
+    margin: 0 0 40px;
+  }
+
+  footer {
+    padding: 64px 32px;
+    margin: -260px 0 0;
+  }
+
+  footer div ul {
+    margin: 0 0 56px;
+  }
+
+  footer div ul li {
+    clear: both;
+  }
+
+  footer div ul li a {
+    padding: 10px 0;
+    display: block;
+  }
+
+  .featureImage.sendGBP::after {
+    z-index: 2;
+    background: #fff;
+    height: 184px
+  }
+
+  .featureImage.sendGBP {
+    margin: 0;
+  }
+
+  .featureImage.sendGBP + h2 {
+    margin-top: -120px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .storeBadges {
+    width: 267px;
+  }
+
+  img.appStore {
+    height: 40px;
+  }
 
 }
