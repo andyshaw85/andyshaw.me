@@ -334,14 +334,16 @@ h2 {
 
 h2 + p {
   text-align: center;
-  max-width: 632px;
+  max-width: 700px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 ul.securityFeatures {
-  max-width: 1120px;
+  max-width: 1200px;
   clear: both;
   margin: 71px auto 160px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -379,8 +381,9 @@ footer {
 }
 
 footer div {
-  max-width: 1120px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 footer a {
@@ -492,6 +495,25 @@ footer div ul li a {
     grid-column-end: 9;
   }
 
+  ul.securityFeatures {
+    margin: 16px auto 64px;
+    display: block;
+    padding: 0;
+  }
+
+  ul.securityFeatures li {
+    border: none;
+    clear: both;
+    width: 100%;
+    padding: 126px 0 0;
+    margin: 0;
+    min-height: auto;
+  }
+
+  ul.securityFeatures li p {
+    margin: 0 32px;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -600,24 +622,6 @@ footer div ul li a {
   h2 + p {
     padding: 0 32px 8px;
     text-align: left;
-  }
-
-  ul.securityFeatures {
-    margin: 16px auto 64px;
-    display: block;
-  }
-
-  ul.securityFeatures li {
-    border: none;
-    clear: both;
-    width: 100%;
-    padding: 126px 0 0;
-    margin: 0;
-    min-height: auto;
-  }
-
-  ul.securityFeatures li p {
-    margin: 0 32px;
   }
 
   .featureImage {
