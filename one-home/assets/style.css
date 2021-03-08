@@ -256,10 +256,12 @@ ul.keyFeatures li h3 {
   font-size: 28px;
   font-weight: 700;
   padding: 8px 0 8px 68px;
+  position: relative;
+  right: 2px;
 }
 
 ul.keyFeatures li h3 {
-  background: url(spend.svg) no-repeat -2px -4px;
+  background: url(spend.svg) no-repeat 0 -4px;
   background-size: 56px 56px;
 }
 
