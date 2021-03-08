@@ -119,6 +119,23 @@ h1 {
   font-size: 20px;
 }
 
+.top p.linkSent {
+  display: none;
+  max-width: 420px;
+  font-size: 18px;
+  margin-top: 40px;
+  color: #ff40b3;
+  font-weight: 700;
+}
+
+.sent .top p.linkSent {
+  display: block;
+}
+
+.sent .top form {
+  display: none;
+}
+
 form {
     position:relative;
     float: left;
@@ -612,6 +629,11 @@ footer div ul li a {
   .top p {
     text-align: center;
     font-size: 18px;
+  }
+
+  .top p.linkSent {
+    font-size: 18px;
+    margin-top: 40px;
   }
 
   .logo {
