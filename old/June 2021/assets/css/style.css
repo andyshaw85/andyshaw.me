@@ -1,16 +1,14 @@
-
-
 @font-face {
-  font-family: "WorkSans-Regular";
-  src: url("../fonts/WorkSans-Regular.woff2") format("woff2");
+  font-family: "GT-Cinetype-Regular";
+  src: url("../fonts/GT-Cinetype-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 @font-face {
-  font-family: "WorkSans-Bold";
-  src: url("../fonts/WorkSans-Bold.woff2") format("woff2");
+  font-family: "GT-Cinetype-Bold";
+  src: url("../fonts/GT-Cinetype-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -18,17 +16,16 @@
 
 body,
 .case .grid ol li p {
-  font-family: "WorkSans-Regular", sans-serif;
+  font-family: "GT-Cinetype-Regular", sans-serif;
 }
 
 strong,
 .clients h4,
 mark,
-h2,
 h6,
 p.caption,
 .case .grid ol li {
-  font-family: "WorkSans-Bold", sans-serif;
+  font-family: "GT-Cinetype-Bold", sans-serif;
 }
 
 * {
@@ -56,76 +53,14 @@ body::after,
   height: 0;
 }
 
-.home {
-  background: #EBF4F4;
-}
-
-.home article {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 120px 0;
-}
-
-.home h1 {
-  font-size: 17px;
-  line-height: 24px;
-  font-family: "WorkSans-Bold", sans-serif;
-}
-
-.home h2 {
-  font-size: 17px;
-  line-height: 24px;
-  font-family: "WorkSans-Regular", sans-serif;
-  padding: 0 0 240px;
-}
-
-.home p {
-  font-size: 21px;
-  line-height: 32px;
-  max-width: 592px;
-}
-
-.home footer {
-  padding: 128px 120px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.home footer ul {
-  float: left;
-}
-
-.home footer ul li {
-  margin-right: 24px;
-  margin-left: 0;
-}
-
-.home footer p {
-  top: 0;
-  float: left;
-  clear: both;
-  font-size: 17px;
-  line-height: 20px;
-  padding: 160px 0 80px;
-}
-
-@media screen and (max-width: 912px) {
-
-  .home article {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
-
-}
-
 a {
   color: rgba(0, 0, 0, 0.88);
-  text-decoration-color: rgba(0, 0, 0, 0.88);
+  text-decoration-color: #fa7268;
   position: relative;
 }
 
 a:hover {
-  text-decoration-color: rgba(0, 0, 0, 0.44);
+  text-decoration-color: rgba(0, 0, 0, 0.88);
 }
 
 a:active {
@@ -154,7 +89,7 @@ body {
   height: 10000px;
 }
 
-/* *::-moz-selection,
+*::-moz-selection,
 *::selection {
   background: #fa7268;
   color: #fff;
@@ -163,7 +98,7 @@ body {
 *::selection {
   background: #fa7268;
   color: #fff;
-} */
+}
 
 .grid {
   max-width: 1360px;
@@ -229,7 +164,7 @@ h2 a::after {
 }
 
 p {
-  font-size: 21px;
+  font-size: 24px;
   line-height: 32px;
   padding: 0 0 32px;
 }
@@ -877,6 +812,7 @@ aside p em:last-child {
     font-size: 24px;
     line-height: 32px;
     padding: 0px 0 69px;
+    font-family: "GT-Cinetype-Bold", sans-serif;
   }
 
   h5 {

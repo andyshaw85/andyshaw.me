@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>[yellow tail] wine / Andy Shaw</title>
+    <title>Australia / Andy Shaw</title>
     <meta name="description" content="I design unobtrusive, intuitive interfaces for digital products in Hackney, London." />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
@@ -14,154 +14,131 @@
         </h1>
         <a href="mailto:hi@andyshaw.me">hi@andyshaw.me</a>
       </hgroup>
-      <h2>[yellow tail] wine</h2>
-      <h5>A fun and easy way for sales people to learn all there is to know about selling and merchandising [yellow tail] wines.</h5>
+      <h2>Launching ClearScore in Australia</h2>
+      <h5>Bringing free reports to a new market.</h5>
     </section>
     <section class="case">
       <section class="grid">
+        <ul class="two smallAndLarge">
+          <li>
+            <img src="assets/S_Epsilon.jpg" />
+          </li>
+          <li>
+            <img src="assets/XL_Epsilon.jpg" />
+          </li>
+        </ul>
+        <h6>Context &amp; problem</h6>
+        <p>In all 3 markets (UK, South Africa and India) we had proved our ability to acquire users with the “free forever” proposition on credit reports, even in markets where there was existing competition.</p>
+        <p>
+          Monetisation (recommending loans and credit cards based on your score) had been the biggest challenge when entering a new market outside of our core UK business. Therefore, we’d need to be certain Australia had good potential from
+          day one. From UK data and insights we already knew what has worked in this market and we were familiar with the problems to overcome from our experience with ZA & IN.
+        </p>
+        <h6>Goals & OKRs</h6>
+        <p>
+          In addition to a speedy launch and the scaling of our user base, our main objective was to be NPV (
+          <a href="https://www.investopedia.com/terms/n/npv.asp">Net Present Value</a>) positive. Results to target; sign up users at £5 CPA
+          (Cost Per Acquisition), more than £1 average revenue per user in first 30 days and for users that have been using the product over 30 days, at least 30% return to the site.
+        </p>
+        <h6>Research</h6>
+        <p>
+          Tim Chong (Product Owner) and I started with competitor and market analysis. Thankfully, with Tim being an Aussie, he was able to sign up to products that require users to have a financial presence there. We were also lucky to
+          gain many useful insights from our Australian colleagues.
+        </p>
+        <h6>Constraints & risks</h6>
+        <p>
+          With the application process being lengthy for an ACL (Australian Credit Licence), we wouldn’t have one for launch. This would limit how we recommend products, for example, we would not be able to provide any sorting option or
+          apply our own logic in recommendations as we do in the UK. From our competitor analysis, we learned that unlike our other markets, in Australia you can sign up without multi-factor authentication. If we did the same we’d need to
+          monitor new users constantly to mitigate fraud.
+        </p>
+        <h6>User testing &amp; rapid prototyping</h6>
+        <ul class="two">
+          <li>
+            <img class="inline" src="assets/testing.png" />
+          </li>
+          <li>
+            <img class="inline" src="assets/notes.png" />
+          </li>
+        </ul>
+        <p>
+          The best part of this project came next; spending almost 3 weeks in Sydney! We flew the whole project team out with the intention of learning as much as possible to develop one of the more complicated parts on the site:
+          registration.
+        </p>
+        <p>
+          Focussing on registration, we had meetings with
+          <a href="https://www.experian.com.au">Experian</a> (credit bureau) and
+          <a href="https://www.vixverify.com">greenID</a> (user verification) to talk about technical implementation as
+          well as gather insights into the best way to optimise.
+
+        </p>
+        <p>For the first week, I led daily user testing sessions. These involved an interview/questions, card sorting exercises and a run-through of a prototype.</p>
+        <img class="one inline" src="assets/rego.png" />
+        <p>
+          With the insights from the testing sessions, I’d update the design/prototype for the next days testing. Each day, with collaboration from the dev team, our work became more real. The first day it was a Sketch prototype. The second
+          day I added some timing and interaction animations in Invision Studio. The third day Jonny (front-end dev) coded the registration in a form and by the end of the week Andrew (back-end dev) had linked up the partner APIs returning
+          actual data.
+        </p>
+        <p>
+          We met with offer partners to help deliver on our monetisation strategy. Upon returning to the UK, I designed the flow of our offers page based on these insights to help maximise conversion and help our users get the right types
+          of information they needed.
+        </p>
         <ul class="three">
           <li>
-            <img src="assets/yellowTail1.png" />
+            <img class="inline" src="assets/product_picker.png" />
           </li>
           <li>
-            <img src="assets/yellowTail2.png" />
+            <img class="inline" src="assets/refine.png" />
           </li>
           <li>
-            <img src="assets/yellowTail3.png" />
+            <img class="inline" src="assets/home_loans.png" />
           </li>
         </ul>
+        <h6>Design system</h6>
+        <p>The pace of delivery on the project was helped massively by our design system. I reused our components and contributed back to the system with new ones when I found a gap.</p>
         <p>
-          We were tasked with bringing the training process of new sales team members to mobile. [yellow tail] were sending new hires a physical book to learn key facts, sales techniques etc. I liked the idea of a tactile book but it came
-          with problems the client was looking to solve by going digital. The two main issues were shipping and outdated content.
+          We have 5 score bands (6 when markets that we support have ’no credit file’ users) and each gets a specific photo background on the dashboard. After I sourced these photos I needed to create assets for our devs to use. These were
+          required not only for web but also iOS and Android, each with their own specific image sizes and formats.
         </p>
-      </section>
-      <section class="grid ten">
-        <ul class="five">
-          <li>
-            <img src="assets/sketch1.jpeg" />
-          </li>
-          <li>
-            <img src="assets/sketch2.jpeg" />
-          </li>
-          <li>
-            <img src="assets/sketch3.jpeg" />
-          </li>
-          <li>
-            <img src="assets/sketch4.jpeg" />
-          </li>
-          <li>
-            <img src="assets/sketch5.jpeg" />
-          </li>
-        </ul>
-      </section>
-      <section class="grid">
+        <img class="one inline noShadow" src="assets/backgrounds.png" />
         <p>
-          With the client and our account team for the project based in NYC, fellow designer Chris Thomas and I made the trip over the pond. We had an initial kick-off meeting with the client, followed by a product design sprint I ran to
-          come up with initial ideas of how to solve the problem.
+          I created an asset library for these backgrounds so that when we uploaded new ones in other markets it would be a lot simpler than our current process. Designers could also use this library when mocking up screens for the
+          dashboard.
         </p>
-        <p>The standout idea was to break down the book into a reading list with a quiz per section. The user would get points for reading through the content and passing the quizzes, all displayed on the leaderboard.</p>
-      </section>
-      <section class="grid ten">
-        <ul class="five">
-          <li>
-            <img src="assets/wire1.png" />
-          </li>
-          <li>
-            <img src="assets/wire2.png" />
-          </li>
-          <li>
-            <img src="assets/wire3.png" />
-          </li>
-          <li>
-            <img src="assets/wire4.png" />
-          </li>
-          <li>
-            <img src="assets/wire5.png" />
-          </li>
-        </ul>
-      </section>
-      <section class="grid">
+        <h6>Reflections</h6>
         <p>
-          We iterated and refined the sketches into wireframes, which were then used to create a quick prototype. Not only does creating prototypes help inform your own design decisions but when it comes to approvals with clients I find it
-          a lot more effective showing how it works rather than telling.
+          Post-launch we heavily monitored the site and app, making interations and improvements where we could. We had an amazing data scientist in the team, Sofie, who made analysing all of this quant data very simple, with understandable
+          dashboard widgets and daily alerts and updates.
         </p>
-      </section>
-      <section class="grid ten">
-        <ul class="five">
-          <li>
-            <img src="assets/design1.png" />
-          </li>
-          <li>
-            <img src="assets/design2.png" />
-          </li>
-          <li>
-            <img src="assets/design3.png" />
-          </li>
-          <li>
-            <img src="assets/design4.png" />
-          </li>
-          <li>
-            <img src="assets/design5.png" />
-          </li>
-        </ul>
-      </section>
-      <section class="grid">
-        <p>Once all parties were on board with how it would work, we moved onto high fidelity designs. Again, building out into a prototype really helped with the user flow.</p>
         <p>
-          During this stage, we were forced to move back to wireframing as feature creep set in. A photo competition and files section were both discussed. Feature creep with client work can be difficult to manage. After making the client
-          aware of how timelines and cost would be affected, they insisted on moving forward with the changes so we came up with the below.
+          A really strong localised sign up journey paid off. Putting in the extra attention to detail to ensure users know what information to give and how to input their identity information correctly really helped with conversion. In
+          fact, we saw a 90% success rate for identity verification – this is at the very top achieved by Australian companies and will save ClearScore £200k in identity verification costs in 2020 alone.
         </p>
-        <ul class="four">
-          <li>
-            <img src="assets/wire6.png" />
-          </li>
-          <li>
-            <img src="assets/design6.png" />
-          </li>
-          <li>
-            <img src="assets/wire7.png" />
-          </li>
-          <li>
-            <img src="assets/design7.png" />
-          </li>
-        </ul>
-        <p>The photo competitions ended up being the most used part of the application. The app went from something new starters used for their first month to an app used throughout their time with [yellow tail].</p>
-        <p>I like how this wasn't a project that ended after launching. We developed our relationship with the brand and worked on update after update with them.</p>
         <aside>
-          <h6>My Role</h6>
-          <p>Andy Shaw
-
-            <em>UX/UI Design</em>
-            <em>Product Management</em>
-          </p>
           <h6>Credits</h6>
           <p>
-            <a href="http://michaelloistl.com">Michael Loistl</a> &amp;
-
-            <a href="https://twitter.com/dconstantinou">Dino Constantinou</a>
-            <em>iOS Development</em>
+            <a href="https://www.linkedin.com/in/tim-chong/">Tim Chong</a>
+            <em>Product Manager</em>
           </p>
           <p>
-            <a href="https://twitter.com/pawelcala">Pawel Cala</a>
-            <em>Android Development</em>
+            <a href="https://github.com/JonnyBog">Jonny Boggon</a>
+            <em>Front-End Developer</em>
           </p>
           <p>
-            <a href="https://github.com/marcinskubala">Marcin Skubala</a>
-            <em>Back-End Development</em>
+            <a href="https://www.linkedin.com/in/andrewdav">Andrew Davidson</a>
+            <em>Back-End Developer</em>
           </p>
           <p>
-            <a href="https://www.thomaschris.co.uk">Chris Thomas</a>
-            <em>UX Design</em>
+            <a href="https://www.linkedin.com/in/fotopgeorgios/">George Fotopoulos</a>
+            <em>Android Developer</em>
           </p>
           <p>
-            <a href="https://southeaststate.com">Glen Chan</a>
-            <em>Illustration</em>
+            <a href="https://www.linkedin.com/in/sophie-shawdon/">Sophie Shawdon</a>
+            <em>Data Scientist</em>
           </p>
           <p>
-            <a href="http://edeanledford.com">Eric Ledford</a>
-            <em>Copywriting</em>
+            <a href="https://uk.linkedin.com/in/francesca-jones-820634a6">Frankie Jones</a>
+            <em>Copywriter</em>
           </p>
-          <a class="next" href="../australia/">Next Project</a>
+          <a class="next" href="../open-banking/">Next Project</a>
         </aside>
         <footer>
           <ul>
@@ -241,22 +218,23 @@
           </p>
         </footer>
       </section>
-      <script>
-        function niceDay() {
-          var d = new Date();
-          var weekday = new Array(7);
-          weekday[0] = "Sunday";
-          weekday[1] = "Monday";
-          weekday[2] = "Tuesday";
-          weekday[3] = "Wednesday";
-          weekday[4] = "Thursday";
-          weekday[5] = "Friday";
-          weekday[6] = "Saturday";
+    </section>
+    <script>
+      function niceDay() {
+        var d = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
 
-          var n = weekday[d.getDay()];
-          document.getElementById("day").innerHTML = n;
-        }
-        window.onload = niceDay;
-      </script>
-    </body>
-  </html>
+        var n = weekday[d.getDay()];
+        document.getElementById("day").innerHTML = n;
+      }
+      window.onload = niceDay;
+    </script>
+  </body>
+</html>
